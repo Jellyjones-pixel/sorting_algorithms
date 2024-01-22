@@ -9,12 +9,12 @@
  */
 int get_max(int *array, int size)
 {
-	int max, i;
+	int max, k;
 
-	for (max = array[0], i = 1; i < size; i++)
+	for (max = array[0], k = 1; k < size; k++)
 	{
-		if (array[i] > max)
-			max = array[i];
+		if (array[k] > max)
+			max = array[k];
 	}
 
 	return (max);
@@ -69,5 +69,6 @@ void counting_sort(int *array, size_t size)
 }
 
 /**
- * adonijah kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

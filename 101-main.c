@@ -54,3 +54,7 @@ int main(void)
     print_list(list);
     return (0);
 }
+/**
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

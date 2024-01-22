@@ -22,5 +22,6 @@ void print_list(const listint_t *list)
 }
 
 /**
- * Adonijah Kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

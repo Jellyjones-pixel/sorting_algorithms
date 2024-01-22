@@ -10,13 +10,13 @@ void quick_sort(int *array, size_t size);
  * @a: The first integer to swap.
  * @b: The second integer to swap.
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *m, int *n)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *m;
+	*m = *n;
+	*n = tmp;
 }
 
 /**
@@ -95,6 +95,6 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * Adonijah Kiplimo
- *
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

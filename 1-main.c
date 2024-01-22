@@ -81,3 +81,7 @@ alex@/tmp/sort$ ./insertion
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
+/**
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

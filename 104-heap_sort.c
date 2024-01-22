@@ -9,13 +9,13 @@ void heap_sort(int *array, size_t size);
  * @a: The first integer
  * @b: The second integer
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *w, int *e)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *w;
+	*w = *e;
+	*e= tmp;
 }
 
 /**
@@ -74,5 +74,6 @@ void heap_sort(int *array, size_t size)
 }
 
 /**
- * Adonijah Kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

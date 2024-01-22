@@ -11,13 +11,13 @@ void bitonic_sort(int *array, size_t size);
  * @a: The first integer.
  * @b: The second integer.
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *p, int *q)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *p;
+	*p = *q;
+	*q = tmp;
 }
 
 /**
@@ -91,5 +91,6 @@ void bitonic_sort(int *array, size_t size)
 }
 
 /**
- * Adonijah Kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

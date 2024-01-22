@@ -19,3 +19,7 @@ int main(void)
     print_array(array, n);
     return (0);
 }
+/**
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

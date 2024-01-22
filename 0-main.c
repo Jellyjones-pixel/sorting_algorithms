@@ -20,6 +20,6 @@ int main(void)
     return (0);
 }
 /**
- * Adonijah KIplimo
- *
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

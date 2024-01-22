@@ -58,3 +58,7 @@ int main(void)
     print_deck(deck);
     return (0);
 }
+/**
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

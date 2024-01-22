@@ -10,13 +10,13 @@ void quick_sort_hoare(int *array, size_t size);
  * @a: The first integer
  * @b: The second integer
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *c, int *d)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *c;
+	*c = *d;
+	*d = tmp;
 }
 
 /**
@@ -94,5 +94,6 @@ void quick_sort_hoare(int *array, size_t size)
 }
 
 /**
- * adonijah kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

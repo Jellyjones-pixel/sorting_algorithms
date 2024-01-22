@@ -11,14 +11,14 @@ void cocktail_sort_list(listint_t **list);
  * @tail: pointer to the tail of the doubly-linked list.
  * @shaker: A pointer to the current swapping node of the cocktail shaker algo.
  */
-void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker)
+void swap_node_ahead(listint_t **list1, listint_t **tail, listint_t **shaker)
 {
 	listint_t *tmp = (*shaker)->next;
 
 	if ((*shaker)->prev != NULL)
 		(*shaker)->prev->next = tmp;
 	else
-		*list = tmp;
+		*list1 = tmp;
 	tmp->prev = (*shaker)->prev;
 	(*shaker)->next = tmp->next;
 	if (tmp->next != NULL)
@@ -96,5 +96,6 @@ void cocktail_sort_list(listint_t **list)
 	}
 }
 /**
- * Adonijah Kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

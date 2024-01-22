@@ -15,16 +15,16 @@ void sort_deck(deck_node_t **deck);
  *         0 if s1 == s2
  *         Negative byte difference if s1 < s2
  */
-int _strcmp(const char *s1, const char *s2)
+int _strcmp(const char *v1, const char *v2)
 {
-	while (*s1 && *s2 && *s1 == *s2)
+	while (*v1 && *v2 && *v1 == *v2)
 	{
-		s1++;
-		s2++;
+		v1++;
+		v2++;
 	}
 
-	if (*s1 != *s2)
-		return (*s1 - *s2);
+	if (*v1 != *v2)
+		return (*v1 - *v2);
 	return (0);
 }
 
@@ -140,5 +140,6 @@ void sort_deck(deck_node_t **deck)
 	insertion_sort_deck_value(deck);
 }
 /**
- * Adonijah Kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

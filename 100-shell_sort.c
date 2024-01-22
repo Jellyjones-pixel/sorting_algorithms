@@ -5,13 +5,13 @@
  * @a: first integer
  * @b: second integer
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *m, int *n)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *m;
+	*m = *n;
+	*n = tmp;
 }
 
 /**
@@ -48,5 +48,6 @@ void shell_sort(int *array, size_t size)
 }
 
 /**
- * adonijah Kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

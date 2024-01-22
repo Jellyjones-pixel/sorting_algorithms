@@ -5,13 +5,13 @@
  * @a: The first integer
  * @b: The second integer
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *m, int *n)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *m;
+	*m = *n;
+	*n = tmp;
 }
 
 /**
@@ -46,5 +46,6 @@ void bubble_sort(int *array, size_t size)
 }
 
 /**
- * adonijah kiplimo
- */
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/

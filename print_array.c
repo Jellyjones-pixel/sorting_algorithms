@@ -22,6 +22,6 @@ void print_array(const int *array, size_t size)
 }
 
 /**
- * Adonijah kiplimo
- */
-
+ * John Mbithi Mutave and Victor Mburu
+ * jellyjones-pixel
+*/
