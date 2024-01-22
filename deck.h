@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * enum kind_e - Enumeration of card suits.
+ * enum kind_e - Enumeration of  suits.
  * @SPADE: Spades suit.
  * @HEART: Hearts suit.
  * @CLUB: Clubs suit.
@@ -34,9 +34,9 @@ typedef struct card_s
 /**
  * struct deck_node_s - Deck of card
  *
- * @card: Pointer to the card of the node
- * @prev: Pointer to the previous node of the list
- * @next: Pointer to the next node of the list
+ * @card: Pointer to the card.
+ * @prev: Pointer to the previous node 
+ * @next: Pointer to the next node 
  */
 typedef struct deck_node_s
 {
@@ -47,8 +47,4 @@ typedef struct deck_node_s
 
 void sort_deck(deck_node_t **deck);
 
-#endif 
-/**
- * @author: Achieng Brian
- * Sorting algorithm
-*/
+#endif /* DECK_H */

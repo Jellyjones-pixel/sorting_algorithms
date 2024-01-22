@@ -1,52 +1,49 @@
 #include "sort.h"
 
 /**
- * swap_ints - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * swap_ints - Swaptwo9 integes in  array.
+ * @a: first integr to swap.
+ * @b: second integer  swap.
  */
-void swap_ints(int *w, int *e)
+void swap_ints(int *a, int *b)
 {
 	int tmp;
 
-	tmp = *w;
-	*w = *e;
-	*e = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 /**
- * selection_sort - Sort an array of integers in ascending order
- *                  using the selection sort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
+ * selection_sort - sort an array of integers in ascending
+ *                  using the selection sort algo
+ * @array:array of integers.
+ * @size:size of the array.
  *
+ * Description: Prints array after each swap.
  */
-
-/*Description: Prints the array after each swap.*/
 void selection_sort(int *array, size_t size)
 {
 	int *min;
-	size_t n, m;
+	size_t i, j;
 
 	if (array == NULL || size < 2)
 		return;
 
-	for (n = 0; n < size - 1; n++)
+	for (i = 0; i < size - 1; i++)
 	{
-		min = array + n;
-		for (m = n + 1; m < size; m++)
-			min = (array[m] < *min) ? (array + m) : min;
+		min = array + i;
+		for (j = i + 1; j < size; j++)
+			min = (array[j] < *min) ? (array + j) : min;
 
-		if ((array + n) != min)
+		if ((array + i) != min)
 		{
-			swap_ints(array + n, min);
+			swap_ints(array + i, min);
 			print_array(array, size);
 		}
 	}
 }
-
-
 /**
- * @author: Achieng Brian
- * Sorting algorithm
-*/
+ * Adonijah Kiplimo
+ */
+

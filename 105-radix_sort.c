@@ -82,6 +82,5 @@ void radix_sort(int *array, size_t size)
 
 	free(buff);
 /**
- * @author: Achieng Brian
- * Sorting algorithm
-*/
+ * adonijah kiplimo
+ */

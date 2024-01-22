@@ -6,19 +6,19 @@
  * @n1: A pointer to the first node to swap.
  * @n2: The second node to swap.
  */
-void swap_nodes(listint_t **h, listint_t **nn1, listint_t *nn2)
+void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
 {
-	(*nn1)->next = nn2->next;
-	if (nn2->next != NULL)
-		nn2->next->prev = *nn1;
-	nn2->prev = (*nn1)->prev;
-	nn2->next = *nn1;
-	if ((*nn1)->prev != NULL)
-		(*nn1)->prev->next = nn2;
+	(*n1)->next = n2->next;
+	if (n2->next != NULL)
+		n2->next->prev = *n1;
+	n2->prev = (*n1)->prev;
+	n2->next = *n1;
+	if ((*n1)->prev != NULL)
+		(*n1)->prev->next = n2;
 	else
-		*h = nn2;
-	(*nn1)->prev = nn2;
-	*nn1 = nn2->prev;
+		*h = n2;
+	(*n1)->prev = n2;
+	*n1 = n2->prev;
 }
 
 /**
@@ -28,27 +28,25 @@ void swap_nodes(listint_t **h, listint_t **nn1, listint_t *nn2)
  *
  * Description: Prints the list after each swap.
  */
-void insertion_sort_list(listint_t **list1)
+void insertion_sort_list(listint_t **list)
 {
 	listint_t *iter, *insert, *tmp;
 
-	if (list1 == NULL || *list1 == NULL || (*list1)->next == NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	for (iter = (*list1)->next; iter != NULL; iter = tmp)
+	for (iter = (*list)->next; iter != NULL; iter = tmp)
 	{
 		tmp = iter->next;
 		insert = iter->prev;
 		while (insert != NULL && iter->n < insert->n)
 		{
-			swap_nodes(list1, &insert, iter);
-			print_list((const listint_t *)*list1);
+			swap_nodes(list, &insert, iter);
+			print_list((const listint_t *)*list);
 		}
 	}
 }
-
-
 /**
- * @author: Achieng Brian
- * Sorting algorithm
-*/
+ * Adonijah Kiplimo
+ *
+ */
