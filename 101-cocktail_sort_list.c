@@ -1,13 +1,9 @@
 #include "sort.h"
 
-void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
-void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
-void cocktail_sort_list(listint_t **list);
-
 /**
  * swap_node_ahead - Swap node in  listint_t doubly-linked list
  *                   list of integers with the node ahead of it.
- * @list: to the head of a doubly-linked list of integers.
+ * @list1: to the head of a doubly-linked list of integers.
  * @tail: pointer to the tail of the doubly-linked list.
  * @shaker: A pointer to the current swapping node of the cocktail shaker algo.
  */
@@ -71,7 +67,7 @@ void cocktail_sort_list(listint_t **list)
 	for (tail = *list; tail->next != NULL;)
 		tail = tail->next;
 
-	while (shaken_not_stirred == false)
+	while (!shaken_not_stirred)
 	{
 		shaken_not_stirred = true;
 		for (shaker = *list; shaker != tail; shaker = shaker->next)

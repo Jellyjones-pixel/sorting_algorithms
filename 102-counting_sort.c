@@ -9,9 +9,13 @@
  */
 int get_max(int *array, int size)
 {
-	int max, k;
+	int max = 0;
+	size_t k;
 
-	for (max = array[0], k = 1; k < size; k++)
+	if (array == NULL || size == 0)
+		return max;
+
+	for (k = 0; k < size; k++)
 	{
 		if (array[k] > max)
 			max = array[k];
@@ -30,7 +34,8 @@ int get_max(int *array, int size)
  */
 void counting_sort(int *array, size_t size)
 {
-	int *count, *sorted, max, i;
+	int *count, *sorted;
+	int max, i;
 
 	if (array == NULL || size < 2)
 		return;

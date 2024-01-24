@@ -2,8 +2,8 @@
 
 /**
  * swap_ints - Swaptwo9 integes in  array.
- * @a: first integr to swap.
- * @b: second integer  swap.
+ * @m: first integr to swap.
+ * @n: second integer  swap.
  */
 void swap_ints(int *m, int *n)
 {

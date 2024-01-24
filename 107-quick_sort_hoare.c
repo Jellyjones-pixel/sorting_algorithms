@@ -7,8 +7,8 @@ void quick_sort_hoare(int *array, size_t size);
 
 /**
  * swap_ints - Swap integers in an array.
- * @a: The first integer
- * @b: The second integer
+ * @c: The first integer
+ * @d: The second integer
  */
 void swap_ints(int *c, int *d)
 {

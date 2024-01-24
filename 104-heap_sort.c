@@ -6,8 +6,8 @@ void heap_sort(int *array, size_t size);
 
 /**
  * swap_ints - Swap integ0ers in an array.
- * @a: The first integer
- * @b: The second integer
+ * @w: The first integer
+ * @e: The second integer
  */
 void swap_ints(int *w, int *e)
 {

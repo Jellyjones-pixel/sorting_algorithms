@@ -7,8 +7,8 @@ void quick_sort(int *array, size_t size);
 
 /**
  * swap_ints - Swaptwo integers in  array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
+ * @m: The first integer to swap.
+ * @n: The second integer to swap.
  */
 void swap_ints(int *m, int *n)
 {
